@@ -33,7 +33,7 @@ const App = () => {
         businessDetails,
       };
       const response = await fetch(
-        "http://localhost:5001/api/getAssessmentValue",
+        "https://demyst-assignment-backend.vercel.app/api/getAssessmentValue",
         {
           method: "POST",
           headers: {
