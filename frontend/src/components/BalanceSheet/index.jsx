@@ -7,7 +7,7 @@ const BalanceSheet = ({ selectedProvider, onSubmit }) => {
 
   const fetchBalanceSheet = async () => {
     const response = await fetch(
-      `http://localhost:5001/api/balanceSheet?provider=${selectedProvider}`
+      `https://demyst-assignment-backend.vercel.app/api/balanceSheet?provider=${selectedProvider}`
     );
     const data = await response.json();
     setBalanceSheetData(data);
